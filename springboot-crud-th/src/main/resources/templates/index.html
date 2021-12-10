@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div align="center">
+		<h1>Student Details</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Student Roll No</th>
+					<th>Student Name</th>
+					<th>Student Address</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="students : ${liststudent}">
+					<td th:text="${students.rollno}"></td>
+					<td th:text="${students.name}"></td>
+					<td th:text="${students.address}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
